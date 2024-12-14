@@ -119,7 +119,7 @@ RegisterNUICallback('closeUI', function(_, cb)
 end)
 
 -- Command to Open UI
-RegisterCommand('rockstarEditor', function()
+RegisterCommand(Config.Command, function()
     SetNuiFocus(true, true)
     SendNUIMessage({ action = "openUI" })
 end)

@@ -1,5 +1,8 @@
 Config = {}
 
+-- Command to open UI
+Config.Command = 'rockstarEditor'
+
 -- Opening editor makes player disconnect into single player (Recommended)
 Config.NetworkSinglePlayer = true
 
