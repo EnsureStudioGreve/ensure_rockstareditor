@@ -87,7 +87,9 @@ RegisterNUICallback('activateEditor', function(data, cb)
     if Config.EnableEditor then
         if data.confirm then
             SetNuiFocus(false, false)
-            NetworkSessionLeaveSinglePlayer()
+            if Config.NetworkSinglePlayer then
+                NetworkSessionLeaveSinglePlayer()
+            end
             ActivateRockstarEditor()
             TriggerServerEvent("rockstarEditor:activateEditor")
             cb({ status = 'activated' })

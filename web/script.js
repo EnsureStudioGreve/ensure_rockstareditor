@@ -24,7 +24,7 @@ $(document).ready(function () {
         });
     }
 
-    // Fetch configuration from the server
+    // Fetch config
     $.post(`https://${GetParentResourceName()}/fetchConfig`, {}, function (config) {
         if (!config.enableRecording) {
             $('#startRecording').prop('disabled', true);
