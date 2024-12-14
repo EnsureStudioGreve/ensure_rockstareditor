@@ -43,7 +43,7 @@ $(document).ready(function () {
     // Function to show the UI
     function showUI() {
         $('#editorUI')
-            .css('display', 'flex')
+            .css('display', 'block')
             .hide()
             .fadeIn(300);
     }
