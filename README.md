@@ -12,7 +12,7 @@
 
 1. **Download or clone** the repository to your local machine.
 2. **Place the `Rup-RockstarEditor` folder** into your server's `resources` directory.
-3. Add the following line to your `server.cfg`: start Rup-RockstarEditor
+3. Add the following line to your `server.cfg`: `ensure Rup-RockstarEditor`
 
 ## License
 
