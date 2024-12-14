@@ -36,6 +36,11 @@ RegisterNUICallback('saveClip', function(_, cb)
             TriggerServerEvent("rockstarEditor:saveClip")
             cb({ status = 'saved' })
         else
+            lib.notify({
+                title = 'Not Recording',
+                description = 'Youre Not Recording',
+                type = 'warning'
+            })
             cb({ status = 'not_recording' })
         end
     else
@@ -58,6 +63,11 @@ RegisterNUICallback('discardClip', function(_, cb)
             TriggerServerEvent("rockstarEditor:discardClip")
             cb({ status = 'discarded' })
         else
+            lib.notify({
+                title = 'Not Recording',
+                description = 'Youre Not Recording',
+                type = 'warning'
+            })
             cb({ status = 'not_recording' })
         end
     else
@@ -73,13 +83,20 @@ end)
 
 -- Activate Rockstar Editor
 RegisterNUICallback('activateEditor', function(data, cb)
+    print(json.encode(data))
     if Config.EnableEditor then
         if data.confirm then
+            SetNuiFocus(false, false)
             NetworkSessionLeaveSinglePlayer()
             ActivateRockstarEditor()
             TriggerServerEvent("rockstarEditor:activateEditor")
             cb({ status = 'activated' })
         else
+            lib.notify({
+                title = 'Cancelled',
+                description = 'You cancelled RS editor',
+                type = 'warning'
+            })
             cb({ status = 'cancelled' })
         end
     else
