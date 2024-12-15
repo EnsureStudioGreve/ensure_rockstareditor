@@ -2,6 +2,8 @@
 
 **Rup-RockstarEditor** is a fully functional UI script for controlling the Rockstar Editor in FiveM. It provides a clean and user-friendly interface for starting, saving, discarding, and activating the Rockstar Editor.
 
+**Support** [Discord](https://discord.gg/nHu2pZjUGG)
+
 ![ui](https://github.com/user-attachments/assets/47d65681-f591-416b-9bb6-e6e2adb41313)
 
 ## Features
