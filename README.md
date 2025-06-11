@@ -1,6 +1,6 @@
-# Rup-RockstarEditor - Ensure Studio Styling
+# Rup's RockstarEditor - Ensure Studio Fork & Styling
 
-**Rockstar Editor** is a fully functional UI script for controlling the Rockstar Editor in FiveM. It provides a clean and user-friendly interface for starting, saving, discarding, and activating the Rockstar Editor.
+**The Rockstar Editor** is a fully functional UI script for controlling the Rockstar Editor in FiveM. It provides a clean and user-friendly interface for starting, saving, discarding, and activating the Rockstar Editor.
 
 **Dependencies** [ox_lib](https://github.com/overextended/ox_lib)
 
@@ -15,8 +15,8 @@
 ## Installation
 
 1. **Download or clone** the repository to your local machine.
-2. **Place the `Rup-RockstarEditor` folder** into your server's `resources` directory.
-3. Add the following line to your `server.cfg`: `ensure Rup-RockstarEditor`
+2. **Place the `ensure_rockstareditor` folder** into your server's `resources` directory.
+3. Add the following line to your `server.cfg`: `ensure_rockstareditor`
 
 ## License
 
