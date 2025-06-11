@@ -4,7 +4,7 @@
 
 **Dependencies** [ox_lib](https://github.com/overextended/ox_lib)
 
-![ui](https://github.com/user-attachments/assets/47d65681-f591-416b-9bb6-e6e2adb41313)
+![ui](https://files.fivemerr.com/images/d3284106-8d3a-4b28-8e1d-c11df4d97bb1.png)
 
 ## Features
 
