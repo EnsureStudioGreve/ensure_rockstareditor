@@ -1,5 +1,19 @@
 local isRecording = false
 
+-- Map Compat Code - if problems occur
+local shouldAllow, mapNames = true, {
+    'cfx-gabz-mapdata'
+}
+
+for i = 1, #mapNames do
+    local state = GetResourceState(mapNames[i])
+    if state == 'starting' or state == 'started' then
+        shouldAllow = false
+    end
+end
+
+if not shouldAllow then return end
+
 -- Fetch Config
 RegisterNUICallback('fetchConfig', function(_, cb)
     cb({
